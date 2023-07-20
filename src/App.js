@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import GlobalStyles from './GlobalStyles';
 
 const Wrapper = styled.div`
   display: flex;
@@ -6,6 +7,7 @@ const Wrapper = styled.div`
   width: 100vw;
   justify-content: center;
   align-items: center;
+  background-color: ${(props) => props.theme.backgroundColor};
 `;
 const rotaionAnimation = keyframes`
   0%{
@@ -42,14 +44,16 @@ const Box = styled.div`
   }
 `;
 
+const Title = styled.h1`
+  color: ${(props) => props.theme.textColor};
+`;
+
 function App() {
   return (
     <>
+      <GlobalStyles />
       <Wrapper>
-        <Box>
-          <Emoji as="p">😀</Emoji>
-        </Box>
-        <Emoji>😀</Emoji>
+        <Title>Hello</Title>
       </Wrapper>
     </>
   );
