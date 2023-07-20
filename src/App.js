@@ -54,6 +54,7 @@ function App() {
       <GlobalStyles />
       <Wrapper>
         <Title>Hello</Title>
+        <Box></Box>
       </Wrapper>
     </>
   );
