@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import GlobalStyles from './GlobalStyles';
+// import GlobalStyles from './GlobalStyles';
 
 const Wrapper = styled.div`
   display: flex;
@@ -51,7 +51,7 @@ const Title = styled.h1`
 function App() {
   return (
     <>
-      <GlobalStyles />
+      {/* <GlobalStyles /> */}
       <Wrapper>
         <Title>Hello</Title>
       </Wrapper>
