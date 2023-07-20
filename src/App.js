@@ -2,6 +2,10 @@ import styled, { keyframes } from 'styled-components';
 
 const Wrapper = styled.div`
   display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
 `;
 const rotaionAnimation = keyframes`
   0%{
@@ -16,6 +20,10 @@ const rotaionAnimation = keyframes`
     border-radius: 0px;
   }
 `;
+
+const Emoji = styled.span`
+  font-size: 30px;
+`;
 const Box = styled.div`
   display: flex;
   justify-content: center;
@@ -24,10 +32,9 @@ const Box = styled.div`
   width: 200px;
   background-color: tomato;
   animation: ${rotaionAnimation} 1s linear infinite;
-  span {
-    font-size: 30px;
+  ${Emoji} {
     &:hover {
-      font-size: 60px;
+      font-size: 90px;
     }
     &:active {
       opacity: 0;
@@ -40,8 +47,9 @@ function App() {
     <>
       <Wrapper>
         <Box>
-          <span>😀</span>
+          <Emoji as="p">😀</Emoji>
         </Box>
+        <Emoji>😀</Emoji>
       </Wrapper>
     </>
   );
