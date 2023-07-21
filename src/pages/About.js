@@ -12,11 +12,13 @@ const Wrapper = styled.div`
 const H1 = styled.h1`
   color: tomato;
 `;
+// const user = [];
 
 const About = () => {
   return (
     <Wrapper>
       <H1>About!!!</H1>
+      {/* <h2>{user[0].name}</h2> */}
     </Wrapper>
   );
 };

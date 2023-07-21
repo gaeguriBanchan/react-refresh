@@ -3,6 +3,8 @@ import { createBrowserRouter } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Root from './Root';
+import NotFound from './pages/NotFound';
+import ErrorComponent from './components/ErrorComponent';
 
 const router = createBrowserRouter([
   {
@@ -16,8 +18,10 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <About />,
+        errorElement: <ErrorComponent />,
       },
     ],
+    errorElement: <NotFound />,
   },
 ]);
 
