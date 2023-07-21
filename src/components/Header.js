@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 const HeaderComponent = styled.div`
@@ -16,6 +16,10 @@ const HeaderComponent = styled.div`
 `;
 
 const Header = () => {
+  const navigate = useNavigate();
+  const onAboutClick = () => {
+    navigate('/about');
+  };
   return (
     <HeaderComponent>
       <ul>
@@ -23,7 +27,7 @@ const Header = () => {
           <Link to={'/'}>Home</Link>
         </li>
         <li>
-          <Link to={'/about'}>About</Link>
+          <button onClick={onAboutClick}>About</button>
         </li>
       </ul>
     </HeaderComponent>
