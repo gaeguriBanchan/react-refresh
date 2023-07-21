@@ -52,7 +52,9 @@ const Home = () => {
   return (
     <Wrapper>
       <Title>Hello</Title>
-      <Box></Box>
+      <Box>
+        <Emoji>😄</Emoji>
+      </Box>
     </Wrapper>
   );
 };
