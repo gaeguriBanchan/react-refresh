@@ -5,6 +5,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
   }
 
   li {
@@ -13,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
 
   a {
     text-decoration: none;
+    /* color: white; */
   }
 
   button {
